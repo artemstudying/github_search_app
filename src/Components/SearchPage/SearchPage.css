@@ -28,12 +28,20 @@ p {
 }
 
 body {
-    padding: 60px;
     box-sizing: border-box;
 }
+.container{
+    width: 100%;
+    padding-top: 50px;
+
+}
+
 .input-group {
+    margin: 0 auto;
+
+    width: 70%;
     display: table;
-    width: 400px;
+    /* width: 400px; */
 }
 
 .input-group label,
@@ -65,7 +73,21 @@ body {
 .input-group :first-child {
     border-left-color: #ccc;
 }
+.search-result-box {
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.result-item {
 
-.input-list {
-    margin-top: 20px;
+}
+.btn-delete {
+
+}
+.btn-delete:hover {
+    cursor: pointer;
 }
