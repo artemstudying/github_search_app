@@ -11,11 +11,13 @@ class SearchPage extends Component {
         this.getSearchData = this.getSearchData.bind(this);
     }
     
-    componentWillMount(){
-        this.getSearchData();
-    }
+    // componentWillMount(){
+    //     this.getSearchData();
+    // }
     getSearchData(){
-        fetch('https://api.github.com/search/repositories?q=hello.',
+        let inputField = document.querySelector('.input');
+
+        fetch('https://api.github.com/search/repositories?q='+inputField,
             {   mode:'cors',
                 method: 'GET',
             })
@@ -37,7 +39,7 @@ class SearchPage extends Component {
                 <div className="input-group">
                     <label>Search Request</label>
                     <input type="text" placeholder="Search" />
-                    <Btn myStyle='btn' BtnName='Search'/>
+                    <Btn myStyle='btn' BtnName='Search' press={this.getSearchData}/>
                 </div>
                 <div> </div>
 
