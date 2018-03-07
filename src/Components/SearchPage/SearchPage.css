@@ -1,0 +1,71 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span,
+div,
+a,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-family: "Tahoma";
+    font-weight: normal;
+}
+
+body {
+    padding: 60px;
+    box-sizing: border-box;
+}
+.input-group {
+    display: table;
+    width: 400px;
+}
+
+.input-group label,
+.input-group input,
+.input-group .btn {
+    display: table-cell;
+    width: 1%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    font-size: 13px;
+    font-family: "Tahoma";
+    color: #000;
+    outline: none;
+    white-space: nowrap;
+}
+
+.input-group input {
+    width: 100%;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.input-group :last-child {
+    border-right-color: #ccc;
+}
+
+.input-group :first-child {
+    border-left-color: #ccc;
+}
+
+.input-list {
+    margin-top: 20px;
+}

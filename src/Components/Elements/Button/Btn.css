@@ -1,4 +1,4 @@
-.BT{
+.Btn{
 	padding:5px 10px 5px 10px;
 	display:inline-block;
 	color:#ffffff;
@@ -11,10 +11,10 @@
 	box-shadow: 0px 2px 3px rgba(0,0,0,1);
 }
 
-.BT:hover{
+.Btn:hover{
 	cursor: pointer;
 }
 
-.BT:active{
+.Btn:active{
 	box-shadow: 0px 2px 3px rgba(0,0,0,0);
 }

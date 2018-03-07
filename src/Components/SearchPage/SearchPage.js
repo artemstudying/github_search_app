@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-
+import Style from './SearchPage.css'
+import Btn from '../Elements/Button/Btn'
 
 class SearchPage extends Component {
     constructor(props) {
@@ -7,6 +8,7 @@ class SearchPage extends Component {
         this.state = {
             searchData: []
         }
+        this.getSearchData = this.getSearchData.bind(this);
     }
     
     componentWillMount(){
@@ -20,14 +22,26 @@ class SearchPage extends Component {
         .then(res=>{
             res.json().then(res=>{
                 this.setState({searchData:res})
-                console.log(res);
+                // console.log(res);
             })
         })
     }
     render(){
+        // let searchResult = this.state.searchData? this.state.searchData.item.map((item, i)=> {
+
+        // }):' ';
+        // console.log(searchResult);
+        
         return(
             <div>
-                <div>Hello </div>
+                <div className="input-group">
+                    <label>Search Request</label>
+                    <input type="text" placeholder="Search" />
+                    <Btn myStyle='btn' BtnName='Search'/>
+                    {/* <a className="btn">Button</a> */}
+                </div>
+                <div> </div>
+
             </div>
         )
     }

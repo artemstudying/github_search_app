@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
-import BTstyle from './BT.css'
+import BtnStyle from './Btn.css'
 
-class BT extends Component {
+class Btn extends Component {
 		constructor(props){
 			super(props);
 		this.press = this.press.bind(this);
@@ -10,9 +10,9 @@ class BT extends Component {
 			this.props.press(e);
 		}
 		render(){
-			return <div className={(this.props.myStyle)} onClick={this.press}>{this.props.BTname}</div>
+			return <div className={(this.props.myStyle)} onClick={this.press}>{this.props.BtnName}</div>
 		}
 		
 }
 
-export default BT;
+export default Btn;
