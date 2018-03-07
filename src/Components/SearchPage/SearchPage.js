@@ -38,7 +38,6 @@ class SearchPage extends Component {
                     <label>Search Request</label>
                     <input type="text" placeholder="Search" />
                     <Btn myStyle='btn' BtnName='Search'/>
-                    {/* <a className="btn">Button</a> */}
                 </div>
                 <div> </div>
 
