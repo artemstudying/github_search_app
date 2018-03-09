@@ -80,7 +80,7 @@ class SearchPage extends Component {
         let selectedItem = this.state.itemOfData? 
                                     <div className='git-page-info'>
                                         <div className='name-of-repo'>
-                                            <span>Name of selected Repository:</span>
+                                            <span>You have selected repository:</span>
                                             <h3>{this.state.itemOfData.name}</h3>
                                         </div>
                                         <a className='btn btn-repo' href={this.state.itemOfData.svn_url} target='_blank'>go to GitHub</a>
@@ -93,7 +93,7 @@ class SearchPage extends Component {
                 <div className='header-wrap'>
                     <header>
                         <h1 className='logo'>
-                            GitHub Search
+                            GitHub Search Tool
                         </h1>
                         <Input 
                         myStyleGroupe="input-group"

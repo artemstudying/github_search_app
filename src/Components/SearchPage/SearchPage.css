@@ -62,7 +62,7 @@ body {
 
 }
 .btn:hover {
-    background-color: rgba(99, 99, 99, 0.26);
+    background-color: rgba(99, 99, 99, 0.4);
 
 }
 .btn:active {
@@ -74,23 +74,20 @@ body {
 .header-wrap {
     width: 80%;
     margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
     background-color: #283149;
-    margin-bottom: 1px;
 }
 header {
     margin: 0 auto;
     width: 90%;
     padding-top: 5px;
-    /* display: grid;
-    grid-template-columns: 1fr 3fr; */
     display: inline-block;
-    
-
 }
 .logo {
     float: left;
     /* padding-top: 10px; */
-    padding-left: 100px;
+    padding-left: 80px;
     font-family: 'Rammetto One', cursive;
     font-size: 30px;
     /* text-align: center; */
@@ -107,7 +104,7 @@ header {
 .input-group .btn {
     display: table-cell;
     width: 1%;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     box-sizing: border-box;
     padding: 10px;
     margin: 0;
@@ -116,7 +113,7 @@ header {
     color: #000;
     outline: none;
     white-space: nowrap;
-    background-color: #01579b;
+    background-color: #404B69;
 }
 .input-group input {
     width: 100%;
@@ -144,7 +141,6 @@ header {
     background-color: #404B69;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 1px;
 }
 .git-page-info {
     width: 90%;
@@ -162,7 +158,7 @@ header {
    
 }
 .name-of-repo > span {
-    margin-right: 10px;
+    margin-right: 14px;
 
 }
 .name-of-repo > h3 {
