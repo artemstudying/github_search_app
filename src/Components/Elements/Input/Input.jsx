@@ -16,7 +16,6 @@ class Input extends Component{
 		const { type, name , value , id  } = this.props;
 		return(
 			<div className={this.props.myStyleGroupe}>
-				<label className={this.props.myStyleL}>{this.props.nameL}</label>
 				<input
 					className={this.props.myStyleI}
 					id={id}

@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "RobotoMed";
+    font-family: "Roboto";
     src: url(./fonts/Roboto-Medium.ttf);
 }
 html,
@@ -23,7 +23,7 @@ a,
 p {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 20px;
     list-style: none;
     text-decoration: none;
     color: #fff;
@@ -40,6 +40,7 @@ body {
     padding-top: 50px;
     background-color: #fff;
     min-height: 2000px;
+    background-image: url(./images/pattern.png);
 
 }
 .btn{
@@ -51,7 +52,7 @@ body {
     height: 36px;
     margin: 8px;
     border-radius: 2px;
-    font-family: "RobotoMed";
+    font-family: "Roboto";
     font-size: 14pt;
     color: #fff;
     min-width: 88px;
@@ -102,7 +103,6 @@ header {
     
     /* width: 400px; */
 }
-.input-group label,
 .input-group input,
 .input-group .btn {
     display: table-cell;
@@ -122,9 +122,18 @@ header {
     width: 100%;
     border-right-color: transparent;
     border-left-color: transparent;
+    background-color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto';
+    padding-top: 5px;
+    padding-bottom: 5px;
+
 }
 .input-group :last-child {
+    background-image: url(./icons/search.png);
     border-right-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .input-group :first-child {
     border-left-color: #ccc;
@@ -138,25 +147,34 @@ header {
     margin-bottom: 1px;
 }
 .git-page-info {
-    width: 40%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 .name-of-repo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 3px;
+   
 }
 .name-of-repo > span {
     margin-right: 10px;
 
 }
+.name-of-repo > h3 {
+     background: #CDE3EB;
+     color: #000;
+     padding: 3px 5px;
+     margin-left: 1px;
+}
 .btn-repo {
-    height: 36db;
-    margin: 6db;
+    background-color: #000;
+    font-size: 21px;
+    /* margin-right: 30px; */
     /* border: 1px solid #b2ebf2;
     border-radius: 3px;
     padding: 3px;
@@ -168,23 +186,34 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
-    background-color: #dbedf3;
+    padding-top: 8px;
+    background-color: #6E828A;
+
 }
 .search-result-box {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
     justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     margin-left: 10px;
     margin-right: 10px;
-    /* padding-left: 10px; */
+    transition: all 80ms ease-in;
+}
+.search-result-box:hover {
+    background-color: #404B69;
+    border-radius: 3px;
 }
 .result-item {
+    padding-top: 12px;
+    padding-left: 8px;
 
 }
 .btn-delete {
+    background-image: url(./icons/delete.png);
+    background-repeat: no-repeat;
+    background-position: center;
     /* border: 1px solid #b2ebf2; */
     /* border-radius: 3px; */
     /* text-align: center; */

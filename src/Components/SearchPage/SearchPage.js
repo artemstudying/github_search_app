@@ -70,7 +70,7 @@ class SearchPage extends Component {
                         return(
                             <div key={i} className='search-result-box'>
                                 <span className='result-item'onClick={()=>{this.changeSelectedRepo(item.id)}}>{item.name}</span>
-                                <span className='btn btn-delete' onClick={()=>{this.deleteItem(item.id)}}>DELETE</span>
+                                <span className='btn btn-delete' onClick={()=>{this.deleteItem(item.id)}}></span>
                             </div>
                         )
         }):'';
@@ -83,7 +83,7 @@ class SearchPage extends Component {
                                             <span>Name of selected Repository:</span>
                                             <h3>{this.state.itemOfData.name}</h3>
                                         </div>
-                                        <a className='btn btn-repo' href={this.state.itemOfData.svn_url} target='_blank'>GitHub</a>
+                                        <a className='btn btn-repo' href={this.state.itemOfData.svn_url} target='_blank'>go to GitHub</a>
                                     </div>
                                 :' ';
         
@@ -99,12 +99,9 @@ class SearchPage extends Component {
                         myStyleGroupe="input-group"
                         type="text" 
                         name="Search"
-                        myStyleI="form_input-AUTH"
-                        nameL="Search Request"
-                        myStyleL="form_label-AUTH" 
+                        myStyleI="form_input"
                         updateValue={this.changeInputValue} 
                         value={this.state.inputValue}
-                        btnName="Search"
                         btnStyle="btn"
                         btnPress={this.getSearchData}
                         />    
