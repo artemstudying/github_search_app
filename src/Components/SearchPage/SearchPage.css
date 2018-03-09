@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "RobotoMed";
+    src: url(./fonts/Roboto-Medium.ttf);
+}
 html,
 body {
     margin: 0;
@@ -22,9 +26,10 @@ p {
     font-size: 14px;
     list-style: none;
     text-decoration: none;
-    color: #000;
-    font-family: "Tahoma";
+    color: #fff;
+    font-family: "Roboto";
     font-weight: normal;
+
 }
 
 body {
@@ -33,17 +38,70 @@ body {
 .container{
     width: 100%;
     padding-top: 50px;
+    background-color: #fff;
+    min-height: 2000px;
 
 }
+.btn{
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 36px;
+    margin: 8px;
+    border-radius: 2px;
+    font-family: "RobotoMed";
+    font-size: 14pt;
+    color: #fff;
+    min-width: 88px;
+    transition: all 80ms ease-in;
+    text-align: center;
+    background-color: #da0463;
 
-.input-group {
+}
+.btn:hover {
+    background-color: rgba(99, 99, 99, 0.26);
+
+}
+.btn:active {
+    background-color: rgba(99, 99, 99, 0.4);
+    box-shadow: 
+        /* 0px 3px rgba(128,128,128,1), gradient effects */
+        0px 4px 6px -1px rgba(00,00,00,0.12); 
+}
+.header-wrap {
+    width: 80%;
     margin: 0 auto;
+    background-color: #283149;
+    margin-bottom: 1px;
+}
+header {
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 5px;
+    /* display: grid;
+    grid-template-columns: 1fr 3fr; */
+    display: inline-block;
+    
 
-    width: 70%;
+}
+.logo {
+    float: left;
+    /* padding-top: 10px; */
+    padding-left: 100px;
+    font-family: 'Rammetto One', cursive;
+    font-size: 30px;
+    /* text-align: center; */
+}
+.input-group {
+    /* margin: 0 auto; */
+    float: right;
+    width: 50%;
     display: table;
+    
     /* width: 400px; */
 }
-
 .input-group label,
 .input-group input,
 .input-group .btn {
@@ -58,35 +116,80 @@ body {
     color: #000;
     outline: none;
     white-space: nowrap;
+    background-color: #01579b;
 }
-
 .input-group input {
     width: 100%;
     border-right-color: transparent;
     border-left-color: transparent;
 }
-
 .input-group :last-child {
     border-right-color: #ccc;
 }
-
 .input-group :first-child {
     border-left-color: #ccc;
 }
+.selected-item-wrap {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #404B69;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 1px;
+}
+.git-page-info {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.name-of-repo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+}
+.name-of-repo > span {
+    margin-right: 10px;
+
+}
+.btn-repo {
+    height: 36db;
+    margin: 6db;
+    /* border: 1px solid #b2ebf2;
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer; */
+}
+.result-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    background-color: #dbedf3;
+}
 .search-result-box {
     margin: 0 auto;
-    width: 70%;
     display: grid;
-    grid-template-columns: 5fr 1fr;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* padding-left: 10px; */
 }
 .result-item {
 
 }
 .btn-delete {
-
+    /* border: 1px solid #b2ebf2; */
+    /* border-radius: 3px; */
+    /* text-align: center; */
+    /* padding-top: 5px; */
+    /* padding-bottom: 5px; */
 }
 .btn-delete:hover {
     cursor: pointer;
